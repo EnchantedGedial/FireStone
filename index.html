@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="dist/css/style.css">
 	<script src="https://unpkg.com/animejs@2.2.0/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	<!-- <script>
+		verify(()=>{{
+			alert("Sucessfull");
+		}})
+	</script> -->
 </head>
+
+
 <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
         <header class="site-header">
@@ -79,14 +86,21 @@
                     <div class="hero-inner">
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0">Fire Stone Technology</h1>
-	                        <p class="hero-paragraph">Over the years of experience , we gained reputation in Web Design services, eCommerce websites, Customized web development services, Digital Marketing services. We take pride in delivering more than 1200+ projects till date</p>
-							<div class="hero-form field field-grouped">
-								<div class="control control-expanded">
-									<input class="input" type="email" name="email" placeholder="Your best email&hellip;">
+	                        <p class="hero-paragraph">Firestone Technology is an IT consulting and Software development organization providing bespoke solutions across critical Web applications, Mobile apps, and Cloud/ SaaS development projects. We are a company with 1+ years of domain knowledge and expertise in IT consulting with offices in Bangalore – India.
+							</p>
+							<div class="hero-form field field-grouped flex gap-2">
+								
+								<div class="control">
+									<a class="button button-primary button-block" href="#">Contact Us</a>
 								</div>
 								<div class="control">
-									<a class="button button-primary button-block" href="#">Early access</a>
+									<a class="button button-primary button-block" href="">Our Work</a>
 								</div>
+							</div>
+							<div>
+								<!-- <div class="control control-expanded">
+									<input class="input" type="email" name="email" onsubmit="verify()" placeholder="Your best email&hellip;">
+								</div> -->
 							</div>
 						</div>
 						<div class="hero-illustration">
@@ -297,8 +311,8 @@
                     <div class="features-inner section-inner">
                         <div class="features-header text-center">
                             <div class="container-sm">
-                                <h2 class="section-title mt-0">Our Pricing</h2>
-                                <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+                                <h2 class="section-title mt-0">Services Offered</h2>
+                                <p class="section-paragraph">Best responsive website designer in Bangalore Responsive web design is a set of techniques used in web development to make the images and layout of a website flexible. Having a responsive web site is necessity</p>
                             </div>
                         </div>
 						<div class="features-wrap">
@@ -355,7 +369,7 @@
 										    </g>
 										</svg>
                                     </div>
-                                    <h4 class="feature-title h3-mobile mb-8">Web development</h4>
+                                    <h4 class="feature-title h3-mobile mb-8">Website development</h4>
                                     <p class="text-sm">When it comes to your business it should be unique, so are our services. From design-led static websites to full CMS we have efficient skills to make your site look good and deliverable.</p>
                                 </div>
                             </div>
@@ -407,7 +421,7 @@
 											<img class="mb-16" src="dist/images/testimonial-01.png" alt="Testimonial">
 										</div>
 										<div class="testimonial-body">
-											<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+											<p class="mb-0">Firestone delivered outstanding service, combining technical expertise with creative solutions.Highly recommended for their exceptional web development services</p>
 										</div>
 									</div>
 									<div class="testimonial-footer">
@@ -424,7 +438,7 @@
 											<img class="mb-16" src="dist/images/testimonial-02.png" alt="Testimonial">
 										</div>
 										<div class="testimonial-body">
-											<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+											<p class="mb-0">Top-tier web development! Expertise, creativity, and reliability define Firestone Technology. My site exceeds expectations—visually stunning, user-friendly. Highly recommended!</p>
 										</div>
 									</div>
 									<div class="testimonial-footer">
@@ -441,7 +455,7 @@
 											<img class="mb-16" src="dist/images/testimonial-03.png" alt="Testimonial">
 										</div>
 										<div class="testimonial-body">
-											<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+											<p class="mb-0">Exceptional web solutions from Firestone Technology. Their team's expertise and commitment shine through in every project. Highly satisfied with the results. Recommend them for top-notch web development services.</p>
 										</div>
 									</div>
 									<div class="testimonial-footer">
@@ -460,15 +474,15 @@
                 <div class="container-sm">
                     <div class="newsletter-inner section-inner">
                         <div class="newsletter-header text-center">
-                            <h2 class="section-title mt-0">Stay in the know</h2>
-                            <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+                            <h2 class="section-title mt-0">Verify Certificate</h2>
+                            <p class="section-paragraph">Enter the special code present in certificate for verifing originality of Internship/Performnance/Charactor Certificate from FireStone Technology</p>
                         </div>
                         <div class="footer-form newsletter-form field field-grouped">
                             <div class="control control-expanded">
-                                <input class="input" type="email" name="email" placeholder="Your best email&hellip;">
+                                <input class="input" type="string" onchange="verify(event.target.value)" name="email" placeholder="Enter Certificate Code">
                             </div>
                             <div class="control">
-                                <a class="button button-primary button-block button-shadow" href="#">Early access</a>
+                                <button onclick="verify()" class="button button-primary button-block button-shadow" >Verify</button>
                             </div>
                         </div>
                     </div>
@@ -548,12 +562,24 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="footer-copyright">&copy; 2018 April, all rights reserved</div>
+                    <div class="footer-copyright">&copy; 2022 April, all rights reserved</div>
                 </div>
             </div>
         </footer>
     </div>
 
     <script src="dist/js/main.min.js"></script>
+	<script>
+		function verify(code){
+			console.log(code)
+			if(code=="internJay23"){
+
+				alert("Name : Jayanth RS" + "\n" + "Position : SDE Intern 2023 ");
+			}else{
+				
+				alert("Invalid Certificate Code");
+			}
+		}
+	</script>
 </body>
 </html>
